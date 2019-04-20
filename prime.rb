@@ -10,10 +10,10 @@ require 'benchmark'
 13
 require 'benchmark'
 
-input = ('a'..'z').map { |letter| [letter, letter] }.to_h
+input = ('a'..'z').map 
 
 puts Benchmark.measure {
   7.times do
-    input.map { |key, value| [key.to_sym, value] }.to_h
+    input.map 
   end
 }
