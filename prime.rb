@@ -1,6 +1,5 @@
 # Add  code here!
- 'benchmark'
-require 'bigdecimal/math'
+require 'benchmark'
 
-puts Benchmark.measure { BigMath.PI(1) }
+puts Benchmark.measure { "a"*1_000_000 }
 
