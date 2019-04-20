@@ -1,7 +1,7 @@
 # Add  code here!
 require 'benchmark'
 
-n = 
+n = 7 
 
-puts Benchmark.measure { "a"*1_000_000 }
+puts Benchmark.measure { "a"*7 }
 
