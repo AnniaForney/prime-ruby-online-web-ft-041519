@@ -1,7 +1,19 @@
 # Add  code here!
 require 'benchmark'
 
-n = 7 
+1
+3
+5
+7
+9
+11
+13
+require 'benchmark'
 
-puts Benchmark.measure { "a"*7 }
+input = ('a'..'z').map { |letter| [letter, letter] }.to_h
 
+puts Benchmark.measure {
+  7.times do
+    input.map { |key, value| [key.to_sym, value] }.to_h
+  end
+}
