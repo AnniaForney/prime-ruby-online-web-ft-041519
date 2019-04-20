@@ -2,4 +2,4 @@
 require 'benchmark'
 require 'bigdecimal/math'
 
-puts benchmark.measure 
+puts benchmark.measure {bigmath 
